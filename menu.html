@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <a class="floatingHome" href="index.html" aria-label="Вернуться на главную страницу">← На главную</a>
+    <button class="scrollTopButton" type="button" data-scroll-top aria-label="Наверх">↑</button>
+    <a class="floatingHome" href="index.html" data-bottom-home aria-label="Вернуться на главную страницу">← На главную</a>
     <main>
       <section class="catalogHero">
         <nav class="nav">
@@ -59,5 +60,6 @@
         <p>Ответственный за сайт: <strong>Берг Яннес</strong></p>
       </footer>
     </main>
+    <script src="src/scroll-buttons.js"></script>
   </body>
 </html>

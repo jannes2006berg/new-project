@@ -134,3 +134,7 @@ h3 { font-size: 24px; margin-bottom: 12px; }
 .floatingHome:hover { transform: translateY(-2px); }
 
 @media (max-width: 560px) { .floatingHome { left: 18px; right: 18px; bottom: 16px; } }
+
+.scrollTopButton { position: fixed; right: 22px; bottom: 92px; z-index: 21; width: 46px; height: 46px; border: 0; border-radius: 50%; background: #2b1912; color: #fff7eb; font-size: 22px; font-weight: 900; cursor: pointer; box-shadow: 0 16px 40px rgba(43,25,18,.24); opacity: 0; pointer-events: none; transform: translateY(12px); transition: opacity .25s ease, transform .25s ease; }
+.scrollTopButton.is-visible, .floatingHome.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.floatingHome { opacity: 0; pointer-events: none; transform: translateY(12px); transition: opacity .25s ease, transform .25s ease; }
