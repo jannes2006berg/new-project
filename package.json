@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "build": "python3 scripts/check_site.py"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
