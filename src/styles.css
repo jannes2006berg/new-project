@@ -68,3 +68,21 @@ h3 { font-size: 24px; margin-bottom: 12px; }
 @keyframes float { 50% { transform: translateY(-15px); opacity: .35; } }
 @media (max-width: 900px) { .links { display: none; } .heroGrid, .contacts { grid-template-columns: 1fr; } .featureGrid, .menuGrid, .contactCards { grid-template-columns: 1fr; } .cupCard { min-height: 420px; } .plate { transform: translate(-50%,-50%) scale(.78); } }
 @media (max-width: 560px) { .navCta { display: none; } .hero { padding-top: 18px; } .brand { font-size: 17px; } .stats { display: grid; } }
+
+.socialHero { min-height: 100vh; padding: 28px clamp(18px, 5vw, 76px) 86px; background: radial-gradient(circle at 80% 10%, rgba(191,106,43,.28), transparent 30%), #fff7eb; }
+.socialIntro { max-width: 900px; padding: clamp(54px, 9vw, 104px) 0 36px; }
+.socialIntro h1 { margin-bottom: 20px; }
+.socialGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+.socialCard { display: grid; grid-template-columns: auto 1fr auto; gap: 22px; align-items: center; min-height: 180px; padding: 28px; border-radius: 34px; color: #fff7eb; box-shadow: 0 24px 70px rgba(54,28,14,.18); overflow: hidden; position: relative; }
+.socialCard::after { content: ''; position: absolute; width: 180px; height: 180px; border-radius: 50%; right: -60px; top: -70px; background: rgba(255,255,255,.16); }
+.socialCard h2 { font-size: clamp(28px, 4vw, 44px); margin-bottom: 10px; }
+.socialCard p { color: rgba(255,247,235,.84); line-height: 1.65; margin-bottom: 0; }
+.socialCard strong { position: relative; z-index: 1; white-space: nowrap; }
+.socialIcon { width: 68px; height: 68px; border-radius: 22px; display: grid; place-items: center; background: rgba(255,255,255,.18); font-size: 30px; font-weight: 900; text-transform: uppercase; }
+.telegram { background: linear-gradient(135deg, #229ed9, #12658f); }
+.instagram { background: linear-gradient(135deg, #f58529, #dd2a7b 48%, #8134af); }
+.vk { background: linear-gradient(135deg, #4c75a3, #264e78); }
+.whatsapp { background: linear-gradient(135deg, #25d366, #128c7e); }
+
+@media (max-width: 900px) { .socialGrid { grid-template-columns: 1fr; } .socialCard { grid-template-columns: auto 1fr; } .socialCard strong { grid-column: 2; } }
+@media (max-width: 560px) { .socialCard { grid-template-columns: 1fr; } .socialCard strong { grid-column: auto; } }
