@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "python3 -m http.server 4173",
-    "build": "python3 - <<'PY'\nfrom pathlib import Path\nassert Path('index.html').exists() and Path('socials.html').exists() and Path('src/styles.css').exists()\nprint('Static site is ready')\nPY"
+    "build": "python3 - <<'PY'\nfrom pathlib import Path\nassert Path('index.html').exists() and Path('socials.html').exists() and Path('menu.html').exists() and Path('src/styles.css').exists()\nprint('Static site is ready')\nPY"
   },
   "dependencies": {},
   "devDependencies": {}
